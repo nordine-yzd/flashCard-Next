@@ -21,17 +21,17 @@ export const Layout: React.FC = ({ children }) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" href="./test">
+              <a className="nav-link active" href="/flashcard/classic">
                 Classic flashcard
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/blog/second">
+              <a className="nav-link active" href="/flashcard/inpu">
                 Input flashcard
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/blog/second">
+              <a className="nav-link active" href="/flashcard/form">
                 Radio flashcard
               </a>
             </li>

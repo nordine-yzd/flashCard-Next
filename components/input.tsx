@@ -11,13 +11,12 @@ type FlashcardMentalProps = {
   bdd: MyTypeAnswerQuestions[];
 };
 
-export function FlashCardInput(props: FlashcardMentalProps): JSX.Element {
+export default function FlashCardInput(
+  props: FlashcardMentalProps
+): JSX.Element {
   const [input, setInput] = React.useState("");
   let [state, setstate] = React.useState(true);
   let [random, setRandom] = React.useState(0);
-  console.log(input);
-  console.log(state);
-  console.log(random);
 
   function getInput() {
     if (input !== "") {

@@ -38,7 +38,7 @@ export default function FlashCardRadio(
               return (
                 <div
                   className="d-flex align-items-center"
-                  key={props.bdd[random].id + 1}
+                  key={props.bdd[random].id}
                 >
                   <input
                     type="radio"
