@@ -36,11 +36,9 @@ export default function FlashCardRadio(
           <div>
             {props.bdd[random].falseAnswer.map((element) => {
               return (
-                <div
-                  className="d-flex align-items-center"
-                  key={props.bdd[random].id}
-                >
+                <div key="1234567889" className="d-flex align-items-center">
                   <input
+                    key={props.bdd[random].id}
                     type="radio"
                     onClick={() => setChekedOne((checkedOne = element))}
                     id="idradioo"
