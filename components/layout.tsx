@@ -1,12 +1,12 @@
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export const Layout: React.FC = ({ children }) => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="../">
-          Navbar
-        </a>
+        <Link href="../">Navbar</Link>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -21,19 +21,23 @@ export const Layout: React.FC = ({ children }) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" href="/flashcard/classic">
-                Classic flashcard
-              </a>
+              <Link href="/flashcard/classic">Classic flashcard</Link>
+              {/* <a className="nav-link active" href="/flashcard/classic"> */}
+              {/* Classic flashcard */}
+              {/* </a> */}
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/flashcard/inpu">
+              <Link href="/flashcard/inpu">Input flashcard</Link>
+              {/* <a className="nav-link active" href="/flashcard/inpu">
                 Input flashcard
-              </a>
+              </a> */}
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/flashcard/form">
+              <Link href="/flashcard/form"> Radio flashcard</Link>
+
+              {/* <a className="nav-link active" href="/flashcard/form">
                 Radio flashcard
-              </a>
+              </a> */}
             </li>
           </ul>
         </div>
